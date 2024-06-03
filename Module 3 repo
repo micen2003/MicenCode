@@ -1,0 +1,12 @@
+public enum BorderSide { Left, Right, Top, Bottom }
+
+BorderSide topSide = BorderSide.Top;
+bool isTop = topSide == BorderSide.Top;  // Comparison, not assignment
+
+public enum BorderSideByte : byte { Left, Right, Top, Bottom }
+public enum BorderSideExplicit : byte { Left=1, Right=2, Top=10, Bottom=11 }
+public enum BorderSidePartiallyExplicit : byte { Left=-1, Right, Top=10, Bottom }
+
+int topValue = (int)BorderSide.Top;         // Enum to int
+BorderSide sideFromValue = (BorderSide)2;   // Int to enum
+```
